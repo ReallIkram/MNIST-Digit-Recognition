@@ -1,0 +1,290 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #111;
+
+    color: white;
+}
+
+
+#root {
+    min-height: 100vh;
+}
+
+
+.app {
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    padding: 50px 20px;
+}
+
+
+.app h1 {
+    margin: 0 0 10px;
+
+    font-size: 38px;
+}
+
+
+.app > p {
+    margin: 0 0 35px;
+
+    color: #aaa;
+
+    font-size: 18px;
+}
+
+
+/* ============================================================
+   CANVAS
+============================================================ */
+
+.drawing-container {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+.canvas-wrapper {
+    width: 400px;
+
+    height: 400px;
+
+    border: 2px solid #444;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    background: black;
+}
+
+
+.drawing-canvas {
+    display: block;
+
+    cursor: crosshair;
+}
+
+
+/* ============================================================
+   BUTTONS
+============================================================ */
+
+.canvas-buttons {
+    display: flex;
+
+    gap: 15px;
+}
+
+
+.canvas-buttons button {
+    border: none;
+
+    border-radius: 8px;
+
+    padding: 12px 28px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.canvas-buttons button:hover {
+    background: #1d4ed8;
+
+    transform: translateY(-2px);
+}
+
+
+.canvas-buttons button:first-child {
+    background: #333;
+}
+
+
+.canvas-buttons button:first-child:hover {
+    background: #444;
+}
+
+
+/* ============================================================
+   LOADING
+============================================================ */
+
+.loading {
+    margin-top: 30px;
+
+    color: #60a5fa;
+
+    font-size: 18px;
+}
+
+
+/* ============================================================
+   ERROR
+============================================================ */
+
+.error {
+    margin-top: 30px;
+
+    padding: 12px 20px;
+
+    border-radius: 8px;
+
+    background: #3f1515;
+
+    color: #ff8080;
+}
+
+
+/* ============================================================
+   PREDICTION
+============================================================ */
+
+.prediction {
+    width: 500px;
+
+    max-width: 100%;
+
+    margin-top: 40px;
+
+    padding: 30px;
+
+    border: 1px solid #333;
+
+    border-radius: 16px;
+
+    background: #181818;
+
+    text-align: center;
+}
+
+
+.prediction h2 {
+    margin-top: 0;
+
+    margin-bottom: 20px;
+}
+
+
+/* ============================================================
+   PREDICTED DIGIT
+============================================================ */
+
+.predicted-digit {
+    font-size: 100px;
+
+    font-weight: bold;
+
+    line-height: 1;
+
+    margin: 20px 0;
+}
+
+
+.confidence {
+    color: #aaa;
+
+    font-size: 18px;
+}
+
+
+/* ============================================================
+   PROBABILITIES
+============================================================ */
+
+.probabilities {
+    margin-top: 30px;
+
+    text-align: left;
+}
+
+
+.probabilities h3 {
+    margin-bottom: 20px;
+
+    text-align: center;
+}
+
+
+.probability-row {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 10px;
+}
+
+
+.digit-label {
+    width: 20px;
+
+    font-weight: bold;
+}
+
+
+.probability-bar {
+    flex: 1;
+
+    height: 10px;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+
+    background: #333;
+}
+
+
+.probability-fill {
+    height: 100%;
+
+    border-radius: 10px;
+
+    background: #2563eb;
+
+    transition: width 0.5s ease;
+}
+
+
+.probability-value {
+    width: 55px;
+
+    text-align: right;
+
+    font-size: 13px;
+
+    color: #aaa;
+}

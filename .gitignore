@@ -1,0 +1,114 @@
+# ============================================================
+# PYTHON / BACKEND
+# ============================================================
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Python packaging
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+
+# ============================================================
+# PYTORCH / ML
+# ============================================================
+
+# Trained model files
+*.pth
+*.pt
+*.ckpt
+*.onnx
+
+# ML datasets
+data/
+datasets/
+
+# MNIST downloaded dataset
+MNIST/
+
+# TensorBoard
+runs/
+logs/
+
+
+# ============================================================
+# JUPYTER
+# ============================================================
+
+.ipynb_checkpoints/
+
+
+# ============================================================
+# NODE / REACT / VITE
+# ============================================================
+
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Vite
+.vite/
+
+# npm logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment variables
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+
+
+# ============================================================
+# IDE / EDITORS
+# ============================================================
+
+.vscode/
+.idea/
+
+# VS Code settings
+*.code-workspace
+
+
+# ============================================================
+# OS FILES
+# ============================================================
+
+.DS_Store
+Thumbs.db
+
+
+# ============================================================
+# TEMPORARY FILES
+# ============================================================
+
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
