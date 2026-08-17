@@ -16,8 +16,13 @@ from fastapi.middleware.cors import CORSMiddleware
 # 1. CONFIGURATION
 # ============================================================
 
-MODEL_PATH = "./model/mnist_cnn.pth"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
+MODEL_PATH = os.path.join(
+    BASE_DIR,
+    "model",
+    "mnist_cnn.pth"
+)
 
 # ============================================================
 # 2. DEVICE
