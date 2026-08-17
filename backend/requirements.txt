@@ -62,8 +62,8 @@ six==1.17.0
 starlette==1.6.0
 sympy==1.14.0
 threadpoolctl==3.6.0
-torch==2.2.2+cu118
-torchvision==0.17.2+cu118
+torch==2.2.2
+torchvision==0.17.2
 triton==3.7.1
 typing-inspection==0.4.4
 typing_extensions==4.16.0
